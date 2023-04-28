@@ -23,6 +23,6 @@ public class WordController {
 	@PutMapping("/{word}")
 	public ResponseEntity<String> setLastWord(@PathVariable String word){
 		wordService.setWord(word);
-		return new ResponseEntity<>("Word added Successfully", HttpStatus.OK);
+		return new ResponseEntity<>("Word added Successfully:" +"word", HttpStatus.OK);
 	}
 }
